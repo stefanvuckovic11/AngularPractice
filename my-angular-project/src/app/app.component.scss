@@ -1,0 +1,116 @@
+$app-primary-color: #4caf50;
+$app-bg-color: #fff;
+$app-border-color: #ccc;
+$app-padding: 10px;
+$app-radius: 4px;
+$app-transition: 0.3s ease;
+
+.app__container__content__form__wrapper {
+  background: $app-bg-color;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: $app-primary-color;
+  }
+
+  &__label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  &__label--select {
+    margin-top: 1rem;
+  }
+
+  &__input {
+    width: 100%;
+    padding: $app-padding;
+    margin-bottom: 1rem;
+    border: 1px solid $app-border-color;
+    border-radius: $app-radius;
+    font-size: 1rem;
+    transition: border-color $app-transition;
+
+    &:focus {
+      border-color: $app-primary-color;
+      outline: none;
+    }
+  }
+
+  &__text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__counter {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  &__warning {
+    color: darken($app-primary-color, 20%);
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+    color: $app-primary-color;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+
+    &__item {
+      background: lighten($app-primary-color, 40%);
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      border-radius: $app-radius;
+    }
+  }
+
+  &__select {
+    width: 100%;
+    padding: $app-padding;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid $app-border-color;
+    border-radius: $app-radius;
+    transition: border-color $app-transition;
+
+    &:focus {
+      border-color: $app-primary-color;
+      outline: none;
+    }
+
+    &__option {
+      padding: $app-padding;
+    }
+  }
+
+  &__switch {
+    margin-top: 1rem;
+
+    &__case,
+    &__default {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      border: 1px solid $app-border-color;
+      border-radius: $app-radius;
+      background: #f9f9f9;
+    }
+  }
+}

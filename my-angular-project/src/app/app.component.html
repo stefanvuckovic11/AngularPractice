@@ -1,0 +1,25 @@
+<div class="app__container__content__form__wrapper">
+  <h2 class="app__container__content__form__wrapper__title">Angular Vjezba</h2>
+  <label class="app__container__content__form__wrapper__label" for="userInput">Kucaj:</label>
+  <input class="app__container__content__form__wrapper__input" id="userInput" type="text" [(ngModel)]="userText" placeholder="unesi tekst" (keydown)="handleKeydown($event)" />
+  <p class="app__container__content__form__wrapper__text">Tvoj unos: {{ userText }}</p>
+  <p class="app__container__content__form__wrapper__counter">Brojac klikova (gornja i donja strelica): {{ counter }}</p>
+  <p *ngIf="shiftActive" class="app__container__content__form__wrapper__warning">Pretisnuo si shift!</p>
+  <h3 class="app__container__content__form__wrapper__subtitle">Popularni framework-ovi</h3>
+  <ul class="app__container__content__form__wrapper__list">
+    <li *ngFor="let item of items" class="app__container__content__form__wrapper__list__item">{{ item }}</li>
+  </ul>
+  <label class="app__container__content__form__wrapper__label--select" for="optionSelect">Choose a framework:</label>
+  <select class="app__container__content__form__wrapper__select" id="optionSelect" [(ngModel)]="selectedOption">
+    <option class="app__container__content__form__wrapper__select__option" value="">--Select a Framework--</option>
+    <option *ngFor="let framework of items" class="app__container__content__form__wrapper__select__option" [value]="framework">
+      {{ framework }}
+    </option>
+  </select>
+  <div class="app__container__content__form__wrapper__switch" [ngSwitch]="selectedOption">
+    <p *ngSwitchCase="'Angular'" class="app__container__content__form__wrapper__switch__case">Izabrao si angular</p>
+    <p *ngSwitchCase="'React'" class="app__container__content__form__wrapper__switch__case">Izabrao si react</p>
+    <p *ngSwitchCase="'Vue'" class="app__container__content__form__wrapper__switch__case">Izabrao si vue</p>
+    <p *ngSwitchDefault class="app__container__content__form__wrapper__switch__default">Izaberi jedan od frameworka</p>
+  </div>
+</div>
