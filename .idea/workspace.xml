@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="601d469f-b595-4e41-b90d-173e6a5de80f" name="Changes" comment="" />
+    <list default="true" id="601d469f-b595-4e41-b90d-173e6a5de80f" name="Changes" comment="--first exercise">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-angular-project/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-angular-project/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-angular-project/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/my-angular-project/src/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-angular-project/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-angular-project/src/app/app.component.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +18,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "stefanvuckovic11"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/stefanvuckovic11/AngularPractice.git",
+    "accountId": "2f139b6c-fa11-4197-b0fb-19f97f04f4fd"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 2
 }]]></component>
@@ -24,9 +41,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,11 +70,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744709622353</updated>
-      <workItem from="1744709623404" duration="1835000" />
+      <workItem from="1744709623404" duration="7106000" />
     </task>
+    <task id="LOCAL-00001" summary="--first exercise">
+      <option name="closed" value="true" />
+      <created>1744712207114</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744712207114</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="--first exercise" />
+    <option name="LAST_COMMIT_MESSAGE" value="--first exercise" />
   </component>
 </project>

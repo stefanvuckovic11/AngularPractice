@@ -5,6 +5,15 @@ $app-padding: 10px;
 $app-radius: 4px;
 $app-transition: 0.3s ease;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+
 .app__container__content__form__wrapper {
   background: $app-bg-color;
   padding: 2rem;

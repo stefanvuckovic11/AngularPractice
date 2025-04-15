@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="app__container__content__form__wrapper">
   <h2 class="app__container__content__form__wrapper__title">Angular Vjezba</h2>
   <label class="app__container__content__form__wrapper__label" for="userInput">Kucaj:</label>
@@ -9,9 +10,9 @@
   <ul class="app__container__content__form__wrapper__list">
     <li *ngFor="let item of items" class="app__container__content__form__wrapper__list__item">{{ item }}</li>
   </ul>
-  <label class="app__container__content__form__wrapper__label--select" for="optionSelect">Choose a framework:</label>
+  <label class="app__container__content__form__wrapper__label--select" for="optionSelect">Izaberi framework:</label>
   <select class="app__container__content__form__wrapper__select" id="optionSelect" [(ngModel)]="selectedOption">
-    <option class="app__container__content__form__wrapper__select__option" value="">--Select a Framework--</option>
+    <option class="app__container__content__form__wrapper__select__option" value="">--Izaberi framework--</option>
     <option *ngFor="let framework of items" class="app__container__content__form__wrapper__select__option" [value]="framework">
       {{ framework }}
     </option>
