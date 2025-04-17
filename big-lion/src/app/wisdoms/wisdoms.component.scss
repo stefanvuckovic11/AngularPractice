@@ -1,0 +1,82 @@
+.wisdom {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  width: 800px;
+  margin-top: -20%;
+  margin-left: -10%;
+  &__box {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(4px);
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+  }
+
+  &__heading {
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    &__label {
+      font-size: 1.1rem;
+      color: #fff;
+    }
+
+    &__range {
+      width: 100%;
+      accent-color: #ffd600;
+    }
+
+    &__button {
+      align-self: flex-start;
+      padding: 0.5rem 1rem;
+      background-color: #fff;
+      color: #333;
+      border: none;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__output {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__loading {
+      font-style: italic;
+      color: #eee;
+    }
+
+    &__text {
+      font-size: 1.25rem;
+      color: #fff;
+      line-height: 1.4;
+    }
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { filter: brightness(1); }
+  50%     { filter: brightness(1.2); }
+}

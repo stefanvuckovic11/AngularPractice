@@ -1,0 +1,39 @@
+<div class="wisdom">
+  <div class="wisdom__box">
+    <h1 class="wisdom__heading">
+      Lion will advise you with the ultimate wisdom
+    </h1>
+
+    <div class="wisdom__controls">
+      <label class="wisdom__controls__label" for="category">
+        Wisdom Category: {{ category }}
+      </label>
+
+      <select
+        id="category"
+        [(ngModel)]="category"
+        class="wisdom__controls__select"
+      >
+        <option *ngFor="let cat of categories" [value]="cat">
+          {{ cat }}
+        </option>
+      </select>
+
+      <button
+        class="wisdom__controls__button"
+        (click)="generateWisdom()"
+      >
+        Generate wisdom in this category
+      </button>
+    </div>
+
+    <div class="wisdom__output">
+      <p *ngIf="loading" class="wisdom__output__loading">
+        Loading wisdom…
+      </p>
+      <p *ngIf="!loading && wisdomText" class="wisdom__output__text">
+        {{ wisdomText }}
+      </p>
+    </div>
+  </div>
+</div>
