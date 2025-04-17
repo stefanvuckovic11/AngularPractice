@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="601d469f-b595-4e41-b90d-173e6a5de80f" name="Changes" comment="--first exercise">
-      <change afterPath="$PROJECT_DIR$/big-lion/public/big-lion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/big-lion/public/lion-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/big-lion/src/app/wisdoms/wisdoms.service.ts" afterDir="false" />
+    <list default="true" id="601d469f-b595-4e41-b90d-173e6a5de80f" name="Changes" comment="--big lion project">
+      <change afterPath="$PROJECT_DIR$/big-lion/src/app/services/speaking.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-lion/src/app/services/tts.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-lion/src/app/big-lion/big-lion.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/big-lion/src/app/big-lion/big-lion.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-lion/src/app/big-lion/big-lion.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/big-lion/src/app/big-lion/big-lion.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-lion/src/app/big-lion/big-lion.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/big-lion/src/app/big-lion/big-lion.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-lion/src/app/wisdoms/wisdoms.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/big-lion/src/app/wisdoms/wisdoms.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-lion/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/big-lion/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +91,7 @@
       <workItem from="1744709623404" duration="7305000" />
       <workItem from="1744784632750" duration="6928000" />
       <workItem from="1744796818118" duration="6767000" />
-      <workItem from="1744874405972" duration="8953000" />
+      <workItem from="1744874405972" duration="14189000" />
     </task>
     <task id="LOCAL-00001" summary="--first exercise">
       <option name="closed" value="true" />
@@ -105,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744727508636</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="--big lion project">
+      <option name="closed" value="true" />
+      <created>1744886634750</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744886634750</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +125,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="--first exercise" />
-    <option name="LAST_COMMIT_MESSAGE" value="--first exercise" />
+    <MESSAGE value="--big lion project" />
+    <option name="LAST_COMMIT_MESSAGE" value="--big lion project" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/big-lion/src/app/wisdoms/wisdoms.component.ts</url>
+          <line>27</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

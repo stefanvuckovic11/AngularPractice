@@ -1,7 +1,9 @@
-import { Component }        from '@angular/core';
-import { CommonModule }     from '@angular/common';
-import { FormsModule }      from '@angular/forms';
-import { WisdomsService }   from './wisdoms.service';
+import { Component }       from '@angular/core';
+import { CommonModule }    from '@angular/common';
+import { FormsModule }     from '@angular/forms';
+import { WisdomsService }  from './wisdoms.service';
+import { TtsService }      from '../services/tts.service';
+import { SpeakingService } from '../services/speaking.service';
 
 @Component({
   standalone: true,
@@ -26,14 +28,43 @@ export class WisdomsComponent {
   wisdomText = '';
   loading = false;
 
-  constructor(private svc: WisdomsService) {}
+  constructor(
+    private svc: WisdomsService,
+    private tts: TtsService,
+    private speaking: SpeakingService
+  ) {}
 
-  generateWisdom() {
+  generateWisdom(): void {
     this.loading = true;
     this.wisdomText = '';
+
     this.svc.getWisdom(this.category).subscribe({
-      next: txt => { this.wisdomText = txt; this.loading = false; },
-      error: _ => { this.wisdomText = 'Error fetching wisdom.'; this.loading = false; }
+      next: txt => {
+        this.wisdomText = txt;
+        this.loading = false;
+
+        this.tts.getSpeech(txt).subscribe({
+          next: blob => {
+            const url = URL.createObjectURL(blob);
+            const audio = new Audio(url);
+
+            this.speaking.start();
+
+            audio.play().finally(() => {
+              this.speaking.stop();
+              URL.revokeObjectURL(url);
+            });
+          },
+          error: () => {
+            console.error('TTS request failed');
+            this.speaking.stop();
+          }
+        });
+      },
+      error: () => {
+        this.wisdomText = 'Error fetching wisdom.';
+        this.loading = false;
+      }
     });
   }
 }

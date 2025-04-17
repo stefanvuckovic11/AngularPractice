@@ -1,7 +1,6 @@
 .big-lion {
   position: relative;
 
-
   &__image {
     margin-left: -15%;
     margin-top: 2%;
@@ -12,5 +11,6 @@
     border-radius: 10px;
     position: relative;
     z-index: 1;
+    transition: opacity 0.2s ease-in-out;
   }
 }
